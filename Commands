@@ -1,0 +1,9 @@
+TEST THE NFT CONTRACT (TERMINAL COMMANDS) : 
+
+- npx hardhat node = deploy a local BC.
+
+- npx hardhat run src/backend/scripts/deploy.js --network localhost = deploy the smartcontract to our local BC.
+
+- npx hardhat console --network localhost = interact with our contract.
+> const contract = await ethers.getContractAt("NFT", "0x5FbDB2315678afecb367f032d93F642f64180aa3")
+> const tokenCount = await contract.tokenCount()
